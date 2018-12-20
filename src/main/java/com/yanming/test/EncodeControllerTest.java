@@ -21,7 +21,7 @@ public class EncodeControllerTest {
     private static final String VAR = "测试111";
 
 
-    @RequestMapping({"test/encode#folder\n"})
+    @RequestMapping({"test/encode"})
     public void sendRecvByMermberId(@RequestParam String test,HttpServletRequest request, Writer writer) throws IOException {
 
         log.info("请求:{}", test, RequestUtil.buildRequestUrl(request));
